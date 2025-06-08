@@ -1,0 +1,307 @@
+/* style.css - GlobalCorp Website */
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background-color: #0a3d62;
+  padding: 1rem 0;
+}
+
+.logo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.logo span {
+  color: #3dc1d3;
+}
+
+nav {
+  float: right;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background: #3dc1d3;
+  border-radius: 5px;
+}
+
+.btn {
+  background: #3dc1d3;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  background: url('../assets/images/hero.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Features */
+.features {
+  padding: 4rem 1rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.features h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #0a3d62;
+}
+
+.feature-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.feature-box div {
+  background: #ecf0f1;
+  padding: 1.5rem;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.feature-box h4 {
+  margin-bottom: 1rem;
+  color: #0a3d62;
+}
+
+/* Footer */
+footer {
+  background-color: #0a3d62;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+.about-hero {
+  color: white;
+  text-align: center;
+  padding: 6rem 1rem;
+  margin-bottom: 3rem;
+}
+
+.about-hero h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.about-hero p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-content h3 {
+  color: #0a3d62;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.about-content p, .about-content ul {
+  font-size: 1.1rem;
+  max-width: 900px;
+  margin-bottom: 2rem;
+}
+
+.about-content ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+.services-hero {
+  color: white;
+  text-align: center;
+  padding: 6rem 1rem;
+  margin-bottom: 3rem;
+}
+
+.services-hero h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.services-hero p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.services-list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-item {
+  background: #f0f4f8;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 280px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.service-item h3 {
+  margin-bottom: 1rem;
+  color: #0a3d62;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #333;
+}
+.contact-hero {
+  color: white;
+  text-align: center;
+  padding: 6rem 1rem;
+  margin-bottom: 3rem;
+}
+
+.contact-hero h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.contact-hero p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto 4rem;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background: #0a3d62;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #095093;
+}.login-container {
+  max-width: 400px;
+  margin: 4rem auto 6rem;
+  background: #f8f9fa;
+  padding: 2.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.login-form h2 {
+  margin-bottom: 1.5rem;
+  color: #0a3d62;
+  text-align: center;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.login-form button {
+  width: 100%;
+  background: #0a3d62;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+  background: #095093;
+}
